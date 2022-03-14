@@ -1,0 +1,58 @@
+1. Introduction
+Instructor: Cody Brocious
+We will learn:
+- How to identify, exploite and remediate top web security vulns and bugs
+- how to handle cryptography
+- how to review and design apps via a security standpoint
+- how to operate as a bug bounty hunter or a security consultant and much more
+
+requirements:
+- OS can run java apps
+- learn automation of requests, (like python request library)
+
+Must have tools:
+- Burp Proxy (Free or Pro -> recommended when working as a pro), for intercepting web requests and inspection
+- Firefox, for setting proxy only via the browser and other cool stuff
+
+Breaker Mindset:
+Thing like a breaker, break things before anyone else can, so that it can be fixed.
+For that, think like an attacker, their goals, aim, methods etc.
+
+the most trivial way to see what a button do is to push it, similarly, in an app every button or key or function 
+does something, to understand that we have to try it to better understand an app.
+
+The imbalance between attacker and defender - is that attacker just has to find one bug or two or chain of them to break the system but
+a defender must find all of them, so the attacker has more advantage. but we will never find every bug as we venture and fix bugs we create
+new ones.
+
+we should be able to understand the goal of an attacker, lets say, hacker breached into a E-commerce site, s/he will most likely go for credit
+card numbers and transactions and for other systems, the goal is different, so thinking that side may open up creative ways to find and exploit
+bugs and patch them.
+
+now that, the goal is understood, prioritize the task, think what keeps the devs up late at night, which key areas they are more concern with. 
+talk to them, ask them. and prioritize areas or bugs, does bug A can affect others or does bug B does that or both, like that. does bug A has higher
+risk or bug B.
+
+Reporting:
+For the course or most likely for starters, include-
+* Title
+* Severity
+* Description
+* Reproduction Steps
+* Impact
+* Mitigation
+* Affected Assests
+
+severity is subjective, many organization think differently of it.
+The instructor use these -
+* Informational - issue has no real impact but it could in the future
+* Low - the business impact has minimal
+* Medium - has potential to cause harm to users or business but not revealing any data
+* High - has potential to cause harm and reveal data and aids in exploitation of other vulns
+* Critical - High risk of personel and confidential data exposure, system compromise and harm to the business
+
+First Bug-
+overview of rXXS or reflected cross site scripting
+
+Next session - how web works, indepth understanding and XXS forgery. setup proxy and look for flow of data when you browse several sites.
+Note: 
